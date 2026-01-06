@@ -1,0 +1,42 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# OS / Editors
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================
+# Data & intermediate outputs
+# =========================
+data/
+raw_data/
+processed_data/
+results/
+*.fits
+*.h5
+*.hdf5
+*.csv
+
+# =========================
+# Logs
+# =========================
+*.log
