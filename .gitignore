@@ -30,7 +30,6 @@ Thumbs.db
 data/
 raw_data/
 processed_data/
-results/
 *.fits
 *.h5
 *.hdf5
