@@ -10,12 +10,12 @@ The following quantities are monitored to assess numerical stability:
 
 - Specific orbital energy:
   \[
-  \varepsilon = \tfrac12 v^2 - \mu / r
+  epsilon = 0.5 * v^2 - mu / r
   \]
 
 - Specific angular momentum (z-component):
   \[
-  h = x v_y - y v_x
+  h = x * v_y - y * v_x
   \]
 
 Relative drift in these quantities is used as a primary accuracy metric.
