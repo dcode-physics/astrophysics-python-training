@@ -5,16 +5,16 @@ def acceleration(r: np.ndarray, params: ProblemParams) -> np.ndarray:
     '''
     Gravitational acceleration for the Kepler problem.
     
-    Parameters:
-
+    Parameters
+    ---------
     r : np.ndarray
         position vector [x, y]
 
     params : ProblemParams
         Physical parameters (mu = GM)
 
-    Returns:
-
+    Returns
+    ---------
     np.ndarray
         Acceleration vector [a_x, a_y]
     '''
