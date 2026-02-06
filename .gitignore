@@ -33,7 +33,6 @@ processed_data/
 *.fits
 *.h5
 *.hdf5
-*.csv
 
 # =========================
 # Logs
