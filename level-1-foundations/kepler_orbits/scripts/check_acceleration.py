@@ -31,7 +31,7 @@ def main():
 
     print('\nAll acceleration checks passed')
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
 
     

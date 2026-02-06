@@ -38,7 +38,7 @@ def main():
     # dt values (smaller -> more accurate)
     dts = np.array([2e-2, 1e-2, 5e-3, 2.5e-3, 1.25e-3], dtype=float)
 
-    methods = [("Euler", integrate_euler), ("RK4", integrate_rk4)]
+    methods = [('Euler', integrate_euler), ('RK4', integrate_rk4)]
 
     results = {}
     for name, integrator in methods:
@@ -75,8 +75,8 @@ def main():
     plt.savefig(figures_dir / 'convergence_energy_dt.png', dpi = 300)
     plt.close()
 
-    print("Saved:", csv_path)
-    print("Saved:", figures_dir / "convergence_energy_dt.png")
+    print('Saved:', csv_path)
+    print('Saved:', figures_dir / 'convergence_energy_dt.png')
 
 if __name__ == '__main__':
     main()
