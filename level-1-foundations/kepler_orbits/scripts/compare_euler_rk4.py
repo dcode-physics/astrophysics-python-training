@@ -53,7 +53,7 @@ if __name__ == '__main__':
     plt.figure()
     plt.plot(time_euler, relative_energy_error_euler, label='Euler')
     plt.plot(time_rk4, relative_energy_error_rk4, label='RK4')
-    plt.xlabel('Time (arb. units)')
+    plt.xlabel('Time (code units)')
     plt.ylabel('Relative Energy Error ΔE / |E₀|')
     plt.title('Energy drift: Euler vs RK4')
     plt.legend()

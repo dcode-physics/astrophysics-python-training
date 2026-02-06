@@ -48,7 +48,7 @@ if __name__ == '__main__':
 
     plt.figure()
     plt.plot(t, energy_relative)
-    plt.xlabel('Time (arb. units)')
+    plt.xlabel('Time (code units)')
     plt.ylabel('Relative energy error ΔE / |E₀|')
     plt.title('Energy Drift in Forward Euler')
     plt.tight_layout()
