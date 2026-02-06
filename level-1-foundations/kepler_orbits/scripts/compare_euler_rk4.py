@@ -61,3 +61,5 @@ if __name__ == '__main__':
     plt.savefig(outdir / 'energy_drift_euler_vs_rk4.png', dpi=300)
     plt.close()
 
+    print('Saved:', outdir / 'energy_drift_euler_vs_rk4.png')
+
