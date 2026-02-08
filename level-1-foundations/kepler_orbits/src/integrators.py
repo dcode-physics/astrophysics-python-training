@@ -59,3 +59,30 @@ def integrate_rk4(rhs, y0, t0, t1, dt):
         y[n + 1] = rk4_step(rhs, t[n], y[n], dt)
 
     return t, y
+
+
+def integrate_verlet(acc, r0, v0, t0, t1, dt):
+    '''
+    Velocity-Verlet integrator for r'' = a(r)
+    '''
+
+    n_steps = int((t1 - t0) / dt)
+
+    t = np.zeros(n_steps + 1)
+    r = np.zeros((n_steps + 1, 2))
+    v = np.zeros((n_steps + 1, 2))
+
+    t[0] = t0
+    r[0] = r0
+    v[0] = v0
+
+    a = acc(r0)
+
+    for n in range(n_steps):
+        r[n + 1] = r[n] + v[n] * dt + 0.5 * a * dt**2
+        a_new = acc(r[n + 1])
+        v[n + 1] = v[n] + 0.5 * (a + a_new) * dt
+        a = a_new
+        t[n + 1] = t[n] + dt
+    
+    return t, r, v
